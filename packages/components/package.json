@@ -1,25 +1,39 @@
 {
   "name": "uipress",
   "version": "0.1.0",
-  "description": "",
-  "files": [
-    "dist",
-    "src"
+  "description": "The SolidJS component library.",
+  "keywords": [
+    "solid",
+    "solidjs",
+    "ui",
+    "library",
+    "design",
+    "system",
+    "component",
+    "components",
+    "frontend",
+    "solidjs-component"
   ],
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/uipress.cjs.js",
+  "module": "./dist/uipress.es.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/cjs/index.js"
+      "import": "./dist/uipress.es.js",
+      "require": "./dist/uipress.cjs.js"
     }
   },
   "scripts": {
     "build": "vite build",
-    "types:esm": "tsc",
-    "types:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    "types": "tsc",
+    "build:types:cjs": "tsc --module CommonJS --outDir dist/cjs"
   },
   "license": "MIT",
+  "author": "Farhad Azarbarzinniaz (https://github.com/farhadniaz)",
+  "sideEffects": false,
   "devDependencies": {
     "@types/babel-core": "^6.25.7",
     "@types/node": "^18.7.6",

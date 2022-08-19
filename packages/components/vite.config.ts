@@ -13,7 +13,7 @@ export default defineConfig({
     sourcemap: true,
     minify: false,
     lib: {
-      formats: ["es", "cjs"],
+      formats: ["es", "cjs","umd"],
       entry: path.resolve(__dirname, "./src/index.ts"),
       name: "uipress",
       fileName: (format) => `uipress.${format}.js`,
