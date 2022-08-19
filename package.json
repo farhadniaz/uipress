@@ -1,10 +1,46 @@
 {
   "name": "uipress",
-  "version": "0.0.0",
+  "version": "0.0.4",
+  "private": "true",
   "description": "SolidJS Component Library",
+  "title": "UIPress SolidJS Component Library",
+  "keywords": [
+    "solidjs",
+    "component",
+    "components",
+    "design",
+    "frontend",
+    "solidjs-component",
+    "ui"
+  ],
   "main": "index.js",
   "repository": "git@github.com:farhadniaz/uipress.git",
   "author": "Farhad Azarbarzinniaz",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^8.0.1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "lerna": "^5.4.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
- 

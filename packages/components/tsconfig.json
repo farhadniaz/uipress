@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": true,
+    "target": "ES2015",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["vite/client"],
+    "noEmit": false,
+    "isolatedModules": true,
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "src/**/*.stories.tsx"]
+}

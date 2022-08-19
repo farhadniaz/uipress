@@ -1,0 +1,36 @@
+{
+  "name": "uipress",
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build",
+    "types:esm": "tsc",
+    "types:cjs": "tsc --module CommonJS --outDir dist/cjs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/babel-core": "^6.25.7",
+    "@types/node": "^18.7.6",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.0",
+    "vite-dts": "^1.0.4",
+    "vite-plugin-solid": "^2.3.0"
+  },
+  "dependencies": {
+    "load-json-file": "^7.0.1",
+    "solid-js": "^1.4.7",
+    "solid-styled-components": "^0.28.4"
+  }
+}
